@@ -2,7 +2,7 @@ use chrono::NaiveDate;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Serialize, Deserialize)]
-struct Expense{
+pub(crate) struct Expense{
     id: u32,
     description: String,
     amount_cents: u64,
