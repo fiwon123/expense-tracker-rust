@@ -28,7 +28,7 @@ fn total_for_month(
     
 }
 
-fn total_by_category(expense: &[Expense]) -> HashMap<String, u64>{
+pub fn total_by_category(expenses: &[Expense]) -> HashMap<String, u64>{
     let mut totals = HashMap::new();
 
     for expense in expenses {
