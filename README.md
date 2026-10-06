@@ -2,6 +2,8 @@
 
 A simple command-line expense tracker built in Rust. Add, list, delete, and summarize your expenses — data is stored in a local `expenses.json` file.
 
+project's description: https://roadmap.sh/projects/expense-tracker
+
 ## Prerequisites
 
 - [Rust](https://rustup.rs/) (stable toolchain)
