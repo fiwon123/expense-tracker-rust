@@ -2,7 +2,7 @@ use chrono::Datelike;
 use clap::{Parser, Subcommand};
 use crate::errors::ExpenseError;
 use crate::models::Expense;
-use crate::reports::{self, total_by_category, total_expenses};
+use crate::reports::{self};
 use crate::storage::{load_expenses, save_expenses};
 
 #[derive(Debug, Parser)]

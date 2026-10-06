@@ -2,8 +2,6 @@ use thiserror::Error;
 
 #[derive(Error, Debug)]
 pub enum ExpenseError {
-    #[error("Expense with ID {0} not found")]
-    NotFound(u32),
     
     #[error("Invalid amount: {0}")]
     InvalidAmount(String),

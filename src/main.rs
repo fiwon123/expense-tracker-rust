@@ -7,8 +7,8 @@ mod errors;
 mod storage;
 mod reports;
 
-fn main() {
+fn main() -> Result<(), anyhow::Error> {
     let cli = Cli::parse();
 
-    run(cli.command);
+    run(cli.command)
 }
