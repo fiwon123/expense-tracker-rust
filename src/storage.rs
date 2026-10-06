@@ -16,7 +16,7 @@ pub fn load_expenses() -> Result<Vec<Expense>, anyhow::Error> {
     Ok(expenses)
 }
 
-fn save_expenses(
+pub fn save_expenses(
     expenses: &[Expense]
 ) -> Result<(), anyhow::Error> {
     let json = serde_json::to_string_pretty(expenses)?;

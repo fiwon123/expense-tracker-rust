@@ -2,7 +2,7 @@ use std::collections::HashMap;
 use chrono::NaiveDate;
 use serde::{Deserialize, Serialize};
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub(crate) struct Expense{
     id: u32,
     description: String,
@@ -33,7 +33,7 @@ impl Expense {
     }
 
     pub(crate) fn amount_cents(&self) -> u64 {
-        self.amount_cents
+        self.amount_cents   
     }
 
     pub(crate) fn date(&self) -> NaiveDate {
@@ -48,5 +48,5 @@ impl Expense {
         &self.description
     }
 
-    
+
 }
